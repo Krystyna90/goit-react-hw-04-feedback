@@ -9,7 +9,7 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
       {options.map((option) => (
         <button
           className={css.Feedback_btn}
-          key={nanoid()}
+          key={option}
           type="button"
           name={option}
           onClick={onLeaveFeedback}
